@@ -122,18 +122,18 @@ let start = Math.round(Math.random() * (10 - 1) + 1); // creates a random number
 let end = Math.round(Math.random() * (1000 - 100) + 100); // creates a random number between 100 and 1000
 
 for (let start = 1; start <= end; start++) {
-    // Check if the number is divisible by both 3 and 5
+    
     if (i % 3 === 0 && i % 5 === 0) {
         console.log('FIZZBUZZ');
     } 
-    // Check if the number is divisible by 3
+   
     else if (start % fizzDivisor === 0) {
         console.log('FIZZ');
     } 
-    // Check if the number is divisible by 5
+    
     else if (start % buzzDivisor === 0) {
         console.log('BUZZ');
     } 
-    //just print the number
+   
    
 }

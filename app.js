@@ -97,6 +97,7 @@ do {
 } while (numA<=100);
 
 //Exercise 4: Find Value
+console.log("EXERCISE 4: FindValue \n==========\n");
 let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
 let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
  
@@ -110,3 +111,29 @@ for(i = 0; i<n; i++){
     }
     
  }
+
+
+
+ //extra
+ console.log("Extra:  \n==========\n");
+ let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let start = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let end = Math.round(Math.random() * (1000 - 100) + 100); // creates a random number between 100 and 1000
+
+for (let start = 1; start <= end; start++) {
+    // Check if the number is divisible by both 3 and 5
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('FIZZBUZZ');
+    } 
+    // Check if the number is divisible by 3
+    else if (start % fizzDivisor === 0) {
+        console.log('FIZZ');
+    } 
+    // Check if the number is divisible by 5
+    else if (start % buzzDivisor === 0) {
+        console.log('BUZZ');
+    } 
+    //just print the number
+   
+}
